@@ -36,9 +36,9 @@ const CounterList = () => {
     setCounters(
       counters.map((counter) => {
         if (counter.id === id) {
-          value = value - 1;
+          counter.value = value - 1;
         }
-        return counters;
+        return counter;
       })
     );
   };
