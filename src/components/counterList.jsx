@@ -22,22 +22,23 @@ const CounterList = () => {
     setCounters(initialState);
   };
 
-  const onIncrement = (value, id) => {
-    setCounters(
-      counters.map((counter) => {
-        if (counter.id === id) {
-          counter.value = value + 1;
-        }
-      })
-    );
-  };
+  //   const onIncrement = (value, id) => {
+  //     setCounters(
+  //       counters.map((counter) => {
+  //         if (counter.id === id) {
+  //           value = value + 1;
+  //         }
+  //       })
+  //     );
+  //   };
 
   const onDecrement = (value, id) => {
     setCounters(
       counters.map((counter) => {
         if (counter.id === id) {
-          counter.value = value - 1;
+          value = value - 1;
         }
+        return counters;
       })
     );
   };

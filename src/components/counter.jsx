@@ -9,15 +9,15 @@ const Counter = (props) => {
     return value === 0 ? "empty" : value;
   };
 
-  const increment = (value, id) => {
-    onIncrement(value, id);
-    console.log(value, id);
-  };
+  // const increment = (value, id) => {
+  //   onIncrement(value, id);
+  //   console.log(value, id);
+  // };
 
-  const decrement = () => {
-    onDecrement(value, id);
-    console.log(value, id);
-  };
+  // const decrement = () => {
+  //   onDecrement(value, id);
+  //   console.log(value, id);
+  // };
 
   const classes = `badge m-2 ${value === 0 ? "bg-warning" : "bg-primary"}`;
   return (
